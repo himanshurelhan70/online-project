@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECART by Himanshu</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ECART.css">
+</head>
+
+<body>
+
+    <!-- /////// header starts ////// -->
+    <header>
+        <!-- navigation starts -->
+        <nav class="navigation">
+            <div class="nav-container inner flex">
+                <div class="logo-box">
+                    <img src="logo.png" alt="logo" class="logo">
+                </div>
+                <div class="menu-box">
+                    <ul class="menu flex">
+                        <li><a href="#">Home</a></li>
+                        <li class="category-dropdown"><a href="#">Categories</a>
+                            <ul class="sub-category">
+                                <li><a href="#!">Category 1</a></li>
+                                <li><a href="#!">Category 2</a></li>
+                                <li><a href="#!">Category 3</a></li>
+                                <li><a href="#!">Category 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="register-dropdown"><a href="#">Register</a>
+                            <ul class="sub-register">
+                                <li><a href="#!">Customer</a></li>
+                                <li><a href="#!">Service Provider</a></li>
+                            </ul>
+                        </li>
+                        <li class="login-dropdown"><a href="#">Login</a>
+                            <ul class="sub-login">
+                                <li><a href="#!">Customer</a></li>
+                                <li><a href="#!">Service Provider</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Cart<i class="fal fa-cart-plus cart"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-nav">
+                    <div class="toggle-box">
+                        <button class="fa fa-bars toggle icon"></button>
+                    </div>
+                    <div class="brand-box">
+                        <a href="#" class="brand"><img src="logo.png" alt="logo" class="brand"></a>
+                    </div>
+                    <div class="cart-box">
+                        <a href="#" class="cart-icon"><i class="fal fa-cart-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <h1>Cart</h1>
+        </div>
+    </header>
+    <!-- /// header ends //// -->
+
+    <div class="new-menu-box">
+        <ul class="new-menu">
+            <li><a href="#">Home</a></li>
+            <li class="new-category-dropdown"><a href="#">Categories<span class="fa fa-angle-down c-u-aero"></span>
+                    <span class="fa fa-angle-up c-d-aero"></span></a></a></li>
+            <ul class="new-sub-category">
+                <li><a href="#!">Category 1</a></li>
+                <li><a href="#!">Category 2</a></li>
+                <li><a href="#!">Category 3</a></li>
+                <li><a href="#!">Category 4</a></li>
+            </ul>
+
+            <li class="new-register-dropdown"><a href="#">Register<span class="fa fa-angle-down r-u-aero"></span>
+                    <span class="fa fa-angle-up r-d-aero"></span></a></li>
+            <ul class="new-sub-register">
+                <li><a href="#!">Customer</a></li>
+                <li><a href="#!">Service Provider</a></li>
+            </ul>
+
+            <li class="new-login-dropdown"><a href="#">Login<span class="fa fa-angle-down l-u-aero"></span>
+                    <span class="fa fa-angle-up l-d-aero"></span></a></a></li>
+            <ul class="new-sub-login">
+                <li><a href="#!">Customer</a></li>
+                <li><a href="#!">Service Provider</a></li>
+            </ul>
+            <li class="last-child"><a href="#">Contact</a></li>
+        </ul>
+        <span class="fa fa-times close"></span>
+    </div>
+
+    <!-- /// navigation ends ///-->
+
+    <!-- /// Shopping cart starts /// -->
+    <section class="shopping-cart inner">
+        <div class="product flex product-headings">
+            <label class="product-image label"></label>
+            <label class="product-details label"></label>
+            <label class="product-price label">Price</label>
+            <label class="product-quantity label">Quantity</label>
+            <label class="product-remove label"></label>
+            <label class="product-total label">Total</label>
+        </div>
+
+        <div class="product flex">
+            <div class="product-image">
+                <img src="img/dingo.webp" alt="">
+            </div>
+            <div class="product-details">
+                <div class="product-title">
+                    <h3>Dingo Dog Bones</h3>
+                </div>
+                <div class="product-description">
+                    The best dog bones of all time. Holy crap. Your
+                    dog will be begging for these things! I got
+                    curious once and ate one myself. I'm a fan.
+                </div>
+            </div>
+            <div class="product-price">
+                <label>Rs. 12.99</label>
+            </div>
+            <div class="product-quantity">
+                <input type="number" min="1" value="2">
+            </div>
+            <div class="product-remove">
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="product-total">
+                <label>Rs. 25.98</label>
+            </div>
+        </div>
+
+        <div class="product flex">
+            <div class="product-image">
+                <img src="img/nutro.webp" alt="">
+            </div>
+            <div class="product-details">
+                <div class="product-title">
+                    <h3>Nutro™ Adult Lamb and Rice Dog Food</h3>
+                </div>
+                <div class="product-description">
+                    Who doesn't like lamb and rice? We've all hit the
+                    halal cart at 3am while quasi-blackout after a
+                    night of binge drinking in Manhattan. Now it's
+                    your dog's turn!
+                </div>
+            </div>
+            <div class="product-price">
+                <label>Rs. 45.99</label>
+            </div>
+            <div class="product-quantity">
+                <input type="number" min="1" value="2">
+            </div>
+            <div class="product-remove">
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="product-total">
+                <label>Rs. 91.98</label>
+            </div>
+        </div>
+
+        <div class="product-footer flex">
+            <div class="product-image"></div>
+            <div class="product-details"></div>
+            <div class="product-price"></div>
+            <div class="product-quantity">
+                <label>Subtotal</label>
+                <label>Tax(5%)</label>
+                <label>Shipping</label>
+                <label>Grand Total</label>
+            </div>
+            <div class="product-remove"></div>
+            <div class="product-total">
+                <label>Rs. 117.96</label>
+                <label>Rs. 5.90</label>
+                <label>Rs. 15.00</label>
+                <label>Rs. 138.86</label>
+            </div>
+
+            <a href="#" class="checkout">Checkout <span class="fa fa-arrow-right"></span></a>
+        </div>
+    </section>
+    <!-- /// Shopping cart ends /// -->
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="ECART.js"></script>
+</body>
+
+</html>
